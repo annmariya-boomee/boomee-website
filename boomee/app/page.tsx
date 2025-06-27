@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Head from 'next/head';
 
 const heroImages = [
   "/images/hero-1.jpg",
@@ -20,154 +21,228 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
+  // Structured data for Google
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Boomee Phygital Services Pvt. Limited",
+    "alternateName": "Boomee",
+    "description": "AI-driven livestock vaccination technologies and smart ear tags for animal healthcare",
+    "url": "https://your-domain.com",
+    "telephone": "+919566661923",
+    "email": "info@boomee-tech.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "First Floor, CUL Building, VIF, TANUVAS, Milk Colony, Madhavaram",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600051",
+      "addressCountry": "IN"
+    },
+    "foundingDate": "2025",
+    "founders": [{
+      "@type": "Organization",
+      "name": "TANUVAS"
+    }],
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Veterinary Incubation Foundation"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/boomee-phygital-services"
+    ]
+  };
+
   return (
-    <main className="min-h-screen w-full font-sans">
-      {/* Hero Section */}
-      <section className="relative h-[100vh] text-white overflow-hidden">
-        <img
-          src={heroImages[index]}
-          alt="Hero Cow"
-          className="absolute w-full h-full object-cover transition-opacity duration-500 opacity-70"
+    <>
+      <Head>
+        <title>Boomee Phygital Services Pvt. Limited - AI Livestock Care Technology</title>
+        <meta name="description" content="Boomee Phygital Services develops AI-driven drone vaccination and smart ear tags for livestock healthcare. Incubated under TANUVAS, serving Tamil Nadu farmers with cutting-edge veterinary technology." />
+        <meta name="keywords" content="Boomee, Phygital Services, livestock vaccination, smart ear tags, AI veterinary technology, drone vaccination, cattle monitoring, TANUVAS, Tamil Nadu, animal healthcare, IoT livestock, precision agriculture" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Boomee Phygital Services Pvt. Limited" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://your-domain.com/" />
+        <meta property="og:title" content="Boomee Phygital Services - AI Livestock Care Technology" />
+        <meta property="og:description" content="Revolutionary AI-driven livestock vaccination and monitoring solutions. Smart ear tags and drone technology for modern animal healthcare." />
+        <meta property="og:image" content="/images/boomee-og-image.jpg" />
+        <meta property="og:site_name" content="Boomee Phygital Services" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://your-domain.com/" />
+        <meta property="twitter:title" content="Boomee Phygital Services - AI Livestock Care Technology" />
+        <meta property="twitter:description" content="Revolutionary AI-driven livestock vaccination and monitoring solutions. Smart ear tags and drone technology for modern animal healthcare." />
+        <meta property="twitter:image" content="/images/boomee-og-image.jpg" />
+
+        {/* Geo tags */}
+        <meta name="geo.region" content="IN-TN" />
+        <meta name="geo.placename" content="Chennai, Tamil Nadu" />
+        <meta name="geo.position" content="13.0827;80.2707" />
+        <meta name="ICBM" content="13.0827, 80.2707" />
+
+        {/* Company specific */}
+        <meta name="company" content="Boomee Phygital Services Pvt. Limited" />
+        <meta name="classification" content="Veterinary Technology, Agricultural Innovation, IoT Solutions" />
+
+        <link rel="canonical" href="https://your-domain.com/" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
         />
+      </Head>
 
-        {/* Optional background blur
-        <div className="absolute top-0 left-0 w-full h-20 bg-black/30 backdrop-blur-sm z-10"></div> */}
+      <main className="min-h-screen w-full font-sans">
+        {/* Hero Section */}
+        <section className="relative h-[100vh] text-white overflow-hidden">
+          <img
+            src={heroImages[index]}
+            alt={`Boomee livestock technology solution ${index + 1}`}
+            className="absolute w-full h-full object-cover transition-opacity duration-500 opacity-70"
+          />
 
-        {/* Overlay Navigation & Branding */}
-        <div className="relative z-20 flex justify-between items-center px-8 py-6">
-          {/* Logo + Company Name */}
-          <div className="flex items-center gap-3">
-            <img
-              src="/images/boomee-logo.png"
-              alt="Boomee Logo"
-              className="h-10 w-auto drop-shadow-md"
-            />
-            <span className="text-white font-bold text-lg md:text-xl drop-shadow-sm">
-              Boomee Phygital Services Pvt. Ltd.
-            </span>
+          {/* Overlay Navigation & Branding */}
+          <div className="relative z-20 flex justify-between items-center px-8 py-6">
+            {/* Logo + Company Name */}
+            <div className="flex items-center gap-3">
+              <img
+                src="/images/boomee-logo.png"
+                alt="Boomee Phygital Services Logo"
+                className="h-10 w-auto drop-shadow-md"
+              />
+              <span className="text-white font-bold text-lg md:text-xl drop-shadow-sm">
+                Boomee Phygital Services Pvt. Ltd.
+              </span>
+            </div>
+
+            {/* Navigation */}
+            <nav className="flex gap-4 md:gap-6 text-sm md:text-base" role="navigation" aria-label="Main navigation">
+              <a href="#about" className="hover:underline" aria-label="About Boomee">About</a>
+              <a href="#case-studies" className="hover:underline" aria-label="Case Studies">Case Studies</a>
+              <a href="#how-it-works" className="hover:underline" aria-label="How it works">How it works</a>
+              <a href="#contact" className="hover:underline" aria-label="Contact Us">Contact Us</a>
+              <a href="#careers" className="hover:underline" aria-label="Careers">Careers</a>
+            </nav>
           </div>
 
-          {/* Navigation */}
-          <nav className="flex gap-4 md:gap-6 text-sm md:text-base">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#case-studies" className="hover:underline">Case Studies</a>
-            <a href="#how-it-works" className="hover:underline">How it works</a>
-            <a href="#contact" className="hover:underline">Contact Us</a>
-            <a href="#careers" className="hover:underline">Careers</a>
-          </nav>
-        </div>
+          {/* Centered Text & Buttons */}
+          <div className="relative z-10 flex flex-col items-center text-center px-6 mt-48">
+            <h1 className="text-4xl md:text-6xl font-bold">
+              Empowering Livestock Care with Technology
+            </h1>
+            <p className="mt-6 text-lg max-w-xl">
+              Using AI & IoT to revolutionize animal husbandry – proudly incubated under TANUVAS.
+            </p>
 
-        {/* Centered Text & Buttons */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6 mt-48">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Empowering Livestock Care with Technology
-          </h1>
-          <p className="mt-6 text-lg max-w-xl">
-            Using AI & IoT to revolutionize animal husbandry – proudly incubated under TANUVAS.
-          </p>
-
-          <div className="mt-8 flex flex-col md:flex-row gap-4">
-            <a
-              href="#solutions"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
-            >
-              Explore Our Solutions
-            </a>
-            <a
-              href="#contact"
-              className="bg-white text-blue-600 border border-blue-600 hover:bg-blue-100 px-6 py-3 rounded-lg font-medium transition"
-            >
-              Book a Demo
-            </a>
+            <div className="mt-8 flex flex-col md:flex-row gap-4">
+              <a
+                href="#solutions"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+                aria-label="Explore Our Solutions"
+              >
+                Explore Our Solutions
+              </a>
+              <a
+                href="#contact"
+                className="bg-white text-blue-600 border border-blue-600 hover:bg-blue-100 px-6 py-3 rounded-lg font-medium transition"
+                aria-label="Book a Demo"
+              >
+                Book a Demo
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Logos Row */}
-<section className="py-10 bg-white">
-  <div className="flex flex-col md:flex-row justify-center items-center gap-12">
-    {/* Boomee Logo + Label */}
-    <div className="flex flex-col items-center">
-      <img src="/images/boomee-logo.png" alt="Boomee" className="h-40 object-contain" />
-      <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
-        Boomee Phygital Services Pvt. Ltd.
-      </span>
-    </div>
+        {/* Logos Row */}
+        <section className="py-10 bg-white">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-12">
+            {/* Boomee Logo + Label */}
+            <div className="flex flex-col items-center">
+              <img src="/images/boomee-logo.png" alt="Boomee Phygital Services Logo" className="h-40 object-contain" />
+              <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
+                Boomee Phygital Services Pvt. Ltd.
+              </span>
+            </div>
 
-    {/* Label */}
-    <div className="text-center text-black font-semibold text-base md:text-lg">
-      in association with
-    </div>
+            {/* Label */}
+            <div className="text-center text-black font-semibold text-base md:text-lg">
+              in association with
+            </div>
 
-    {/* VIF/TANUVAS Logo + Label */}
-    <div className="flex flex-col items-center">
-      <img src="/images/vif.png" alt="VIF TANUVAS" className="h-40 object-contain" />
-      <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
-        Veterinary Incubation Foundation @ TANUVAS
-      </span>
-    </div>
-  </div>
-</section>
+            {/* VIF/TANUVAS Logo + Label */}
+            <div className="flex flex-col items-center">
+              <img src="/images/vif.png" alt="Veterinary Incubation Foundation TANUVAS Logo" className="h-40 object-contain" />
+              <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
+                Veterinary Incubation Foundation @ TANUVAS
+              </span>
+            </div>
+          </div>
+        </section>
 
+        {/* About Section */}
+        <section id="about" className="bg-white py-20 px-6 text-gray-800">
+          <div className="max-w-6xl mx-auto space-y-16">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold text-blue-700 mb-4">About Boomee Phygital Services</h2>
+              <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
+                <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering
+                veterinary innovation company based at TANUVAS, Chennai. We specialize in developing livestock
+                vaccination technologies and smart ear tags, tailored to reduce manual labour, increase efficiency,
+                and ensure precision in animal healthcare. Our team of engineers, veterinarians, and innovators is
+                driven by a shared vision — to transform animal health services using advanced technology. Our
+                solutions address critical challenges in rural veterinary outreach, such as manpower shortages,
+                geographic barriers, and inefficiencies in disease monitoring.
+              </p>
+            </div>
 
-      {/* About Section */}
-<section id="about" className="bg-white py-20 px-6 text-gray-800">
-  <div className="max-w-6xl mx-auto space-y-16">
-    <div className="text-center">
-      <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
-      <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-        <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering
-        veterinary innovation company based at TANUVAS, Chennai. We specialize in developing livestock
-        vaccination technologies and smart ear tags, tailored to reduce manual labour, increase efficiency,
-        and ensure precision in animal healthcare. Our team of engineers, veterinarians, and innovators is
-        driven by a shared vision — to transform animal health services using advanced technology. Our
-        solutions address critical challenges in rural veterinary outreach, such as manpower shortages,
-        geographic barriers, and inefficiencies in disease monitoring.
-      </p>
-    </div>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div className="bg-gray-50 rounded-xl shadow-md p-6">
+                <h3 className="text-2xl font-semibold text-blue-800 mb-3">🔧 What We Do</h3>
+                <p className="text-gray-700 text-base leading-relaxed">
+                  We support animal healthcare through advanced technology by developing AI-driven vaccination
+                  solutions and smart ear tags that enable real-time health monitoring, tracking, and geofencing
+                  of livestock. Our platforms collect and analyze data to improve decision-making in veterinary
+                  services, disease control, and productivity.
+                </p>
+              </div>
 
-    <div className="grid md:grid-cols-2 gap-10">
-      <div className="bg-gray-50 rounded-xl shadow-md p-6">
-        <h3 className="text-2xl font-semibold text-blue-800 mb-3">🔧 What We Do</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          We support animal healthcare through advanced technology by developing AI-driven vaccination
-          solutions and smart ear tags that enable real-time health monitoring, tracking, and geofencing
-          of livestock. Our platforms collect and analyze data to improve decision-making in veterinary
-          services, disease control, and productivity.
-        </p>
-      </div>
+              <div className="bg-gray-50 rounded-xl shadow-md p-6">
+                <h3 className="text-2xl font-semibold text-blue-800 mb-3">🎯 Why We Do It</h3>
+                <p className="text-gray-700 text-base leading-relaxed">
+                  We're driven by challenges like limited veterinary manpower, remote access issues, and lack of
+                  real-time data. We believe healthy livestock is vital for food security, rural livelihoods, and
+                  public health. Our goal is to make animal healthcare faster, smarter, and more accessible.
+                </p>
+              </div>
+            </div>
 
-      <div className="bg-gray-50 rounded-xl shadow-md p-6">
-        <h3 className="text-2xl font-semibold text-blue-800 mb-3">🎯 Why We Do</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          We're driven by challenges like limited veterinary manpower, remote access issues, and lack of
-          real-time data. We believe healthy livestock is vital for food security, rural livelihoods, and
-          public health. Our goal is to make animal healthcare faster, smarter, and more accessible.
-        </p>
-      </div>
-    </div>
+            <div className="grid md:grid-cols-2 gap-10">
+              <div className="bg-white border-l-4 border-green-500 pl-6 py-4 shadow-sm">
+                <h3 className="text-2xl font-semibold text-green-700 mb-2">🌍 Our Vision</h3>
+                <p className="text-gray-700 text-base leading-relaxed">
+                  To become a global leader in smart veterinary technology, transforming animal healthcare
+                  through automation, data, and innovation — ensuring healthier livestock, empowered veterinary
+                  services, and sustainable agriculture.
+                </p>
+              </div>
 
-    <div className="grid md:grid-cols-2 gap-10">
-      <div className="bg-white border-l-4 border-green-500 pl-6 py-4 shadow-sm">
-        <h3 className="text-2xl font-semibold text-green-700 mb-2">🌍 Vision</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          To become a global leader in smart veterinary technology, transforming animal healthcare
-          through automation, data, and innovation — ensuring healthier livestock, empowered veterinary
-          services, and sustainable agriculture.
-        </p>
-      </div>
-
-      <div className="bg-white border-l-4 border-blue-500 pl-6 py-4 shadow-sm">
-        <h3 className="text-2xl font-semibold text-blue-700 mb-2">🚀 Mission</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          To develop AI-driven drones and smart ear tags that enhance the efficiency and reach of
-          veterinary care. We aim for scalable, user-friendly solutions that support field-level
-          decisions and empower communities through technology.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+              <div className="bg-white border-l-4 border-blue-500 pl-6 py-4 shadow-sm">
+                <h3 className="text-2xl font-semibold text-blue-700 mb-2">🚀 Our Mission</h3>
+                <p className="text-gray-700 text-base leading-relaxed">
+                  To develop AI-driven drones and smart ear tags that enhance the efficiency and reach of
+                  veterinary care. We aim for scalable, user-friendly solutions that support field-level
+                  decisions and empower communities through technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
 {/* Case Studies Section */}
       <section
