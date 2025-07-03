@@ -85,32 +85,31 @@ export default function Home() {
       </section>
 
       {/* Logos Row */}
-<section className="py-4 bg-white">
-  <div className="container mx-auto px-4 ml-8">
-    <div className="flex flex-col md:flex-row justify-center items-center gap-12 text-center">
-      {/* Boomee Logo + Label */}
-      <div className="flex flex-col items-center">
-        <img src="/images/boomee-logo.png" alt="Boomee" className="h-40 object-contain" />
-        <span className="mt-2 text-black font-semibold text-sm md:text-base">
-          Boomee Phygital Services Pvt. Ltd.
-        </span>
-      </div>
+<section className="py-10 bg-white">
+  <div className="flex flex-col md:flex-row justify-center items-center gap-12 ml-8">
+    {/* Boomee Logo + Label */}
+    <div className="flex flex-col items-center">
+      <img src="/images/boomee-logo.png" alt="Boomee" className="h-40 object-contain" />
+      <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
+        Boomee Phygital Services Pvt. Ltd.
+      </span>
+    </div>
 
-      {/* Label */}
-      <div className="text-black font-semibold text-base md:text-lg">
-        in association with
-      </div>
+    {/* Label */}
+    <div className="text-center text-black font-semibold text-base md:text-lg">
+      in association with
+    </div>
 
-      {/* VIF/TANUVAS Logo + Label */}
-      <div className="flex flex-col items-center">
-        <img src="/images/vif.png" alt="VIF TANUVAS" className="h-36 object-contain" />
-        <span className="mt-2 text-black font-semibold text-sm md:text-base">
-          Veterinary Incubation Foundation @ TANUVAS
-        </span>
-      </div>
+    {/* VIF/TANUVAS Logo + Label */}
+    <div className="flex flex-col items-center">
+      <img src="/images/vif.png" alt="VIF TANUVAS" className="h-40 object-contain" />
+      <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
+        Veterinary Incubation Foundation @ TANUVAS
+      </span>
     </div>
   </div>
 </section>
+
 
 
       {/* About Section */}
