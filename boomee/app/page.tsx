@@ -52,6 +52,7 @@ export default function Home() {
           <nav className="flex gap-4 md:gap-6 text-sm md:text-base">
             <a href="#about" className="hover:underline">About</a>
 {/*             <a href="#case-studies" className="hover:underline">Case Studies</a> */}
+            <a href="#solutions" className="hover:underline">Products</a>
             <a href="#how-it-works" className="hover:underline">How it works</a>
             <a href="#contact" className="hover:underline">Contact Us</a>
             <a href="#careers" className="hover:underline">Careers</a>
@@ -69,107 +70,158 @@ export default function Home() {
 
           <div className="mt-8 flex flex-col md:flex-row gap-4">
             <a
-              href="#solutions"
+              href="#what"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
             >
-              Explore Our Solutions
+              What we do?
             </a>
             <a
-              href="#contact"
+              href="#why"
               className="bg-white text-blue-600 border border-blue-600 hover:bg-blue-100 px-6 py-3 rounded-lg font-medium transition"
             >
-              Book a Demo
+              Why we do?
             </a>
           </div>
         </div>
       </section>
 
       {/* Logos Row */}
-<section className="py-10 bg-white">
-  <div className="flex flex-col md:flex-row justify-center items-center gap-12 ml-8">
+{/* <section className="py-10 bg-white">
+  <div className="flex flex-col md:flex-row justify-center items-center gap-12"> */}
     {/* Boomee Logo + Label */}
-    <div className="flex flex-col items-center">
+    {/* <div className="flex flex-col items-center">
       <img src="/images/boomee-logo.png" alt="Boomee" className="h-40 object-contain" />
       <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
         Boomee Phygital Services Pvt. Ltd.
       </span>
-    </div>
+    </div> */}
 
     {/* Label */}
-    <div className="text-center text-black font-semibold text-base md:text-lg">
+    {/* <div className="text-center text-black font-semibold text-base md:text-lg">
       in association with
-    </div>
+    </div> */}
 
     {/* VIF/TANUVAS Logo + Label */}
-    <div className="flex flex-col items-center">
+    {/* <div className="flex flex-col items-center">
       <img src="/images/vif.png" alt="VIF TANUVAS" className="h-40 object-contain" />
       <span className="mt-2 text-black font-semibold text-sm md:text-base text-center">
         Veterinary Incubation Foundation @ TANUVAS
       </span>
     </div>
   </div>
-</section>
-
+</section> */}
 
 
       {/* About Section */}
 <section id="about" className="bg-white py-20 px-6 text-gray-800">
-  <div className="max-w-6xl mx-auto space-y-16">
+  <div className="max-w-6xl mx-auto space-y-20">
     <div className="text-center">
       <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
       <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-        <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering
-        veterinary innovation company based at TANUVAS, Chennai. We specialize in developing livestock
-        vaccination technologies and smart ear tags, tailored to reduce manual labour, increase efficiency,
-        and ensure precision in animal healthcare. Our team of engineers, veterinarians, and innovators is
-        driven by a shared vision — to transform animal health services using advanced technology. Our
-        solutions address critical challenges in rural veterinary outreach, such as manpower shortages,
-        geographic barriers, and inefficiencies in disease monitoring.
+        <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a next-generation veterinary technology company incubated at TANUVAS, Chennai. We are on a mission to transform livestock healthcare through intelligent automation and real-time data.
+        <br /><br />
+        At the intersection of agriculture, AI, and animal science, our solutions are built to solve the toughest challenges in rural veterinary care — from limited manpower and disease outbreaks to inaccessible terrains.
+        <br /><br />
+        Our flagship innovations — drone-based livestock treatment systems and smart IoT ear tags — help farmers, veterinarians, and policymakers make faster, smarter, and more informed decisions. Whether it’s diagnosing illness, delivering precision vaccines, or analyzing herd behavior, Boomee brings the future of animal healthcare to the field.
       </p>
     </div>
 
-    <div className="grid md:grid-cols-2 gap-10">
-      <div className="bg-gray-50 rounded-xl shadow-md p-6">
-        <h3 className="text-2xl font-semibold text-blue-800 mb-3">🔧 What We Do</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          We support animal healthcare through advanced technology by developing AI-driven vaccination
-          solutions and smart ear tags that enable real-time health monitoring, tracking, and geofencing
-          of livestock. Our platforms collect and analyze data to improve decision-making in veterinary
-          services, disease control, and productivity.
-        </p>
-      </div>
+    {/* Image Below About Section
+    <div className="flex justify-center">
+      <img
+        src="/images/image.jpeg" // change this path to your actual image file
+        alt="About Boomee"
+        className="w-full max-w-4xl rounded-lg object-contain"
+      />
+    </div> */}
 
-      <div className="bg-gray-50 rounded-xl shadow-md p-6">
-        <h3 className="text-2xl font-semibold text-blue-800 mb-3">🎯 Why We Do</h3>
-        <p className="text-gray-700 text-base leading-relaxed">
-          We're driven by challenges like limited veterinary manpower, remote access issues, and lack of
-          real-time data. We believe healthy livestock is vital for food security, rural livelihoods, and
-          public health. Our goal is to make animal healthcare faster, smarter, and more accessible.
-        </p>
-      </div>
-    </div>
 
+    {/* What We Do */}
+<div id= 'what'className="grid md:grid-cols-2 gap-10 items-center">
+  <div className="bg-white rounded-xl">
+    <h3 className="text-2xl font-semibold text-white mb-3">What We Do</h3>
+    <p className="text-gray-700 text-base leading-relaxed">
+      We build intelligent, responsive systems that give animals a voice — and vets the tools to act on it.
+      <br /><br />
+      At the center of our solution is the Boomee Smart Ear Tag — a lightweight, wearable device that transforms every animal into a live stream of health data. It constantly monitors temperature, heart rate, activity, and movement, alerting farmers and veterinary teams the moment something seems off.
+      <br /><br />
+      But real-time data is only powerful when it’s paired with timely action. That’s why our system integrates with autonomous drones — precision tools that can fly in to deliver vaccines, supplements, or diagnostic support exactly when and where it’s needed.
+      <br /><br />
+      We don’t just monitor.
+      We create a closed-loop system of care — where detection and treatment happen seamlessly, with minimal delay, even in the most remote environments.
+      <br /><br />
+      With Boomee, every animal receives:
+      <ul className="list-disc pl-5 mt-2">
+        <li>24/7 intelligent health surveillance</li>
+        <li>Early detection through AI-driven analytics</li>
+        <li>Drone-assisted, geo-tagged intervention</li>
+        <li>Scalable solutions that work on real farms, under real conditions</li>
+      </ul>
+      <br />
+      What we do is more than tech.
+      It’s a new standard for livestock healthcare — one that’s proactive, precise, and deeply grounded in the realities of rural life.
+    </p>
+  </div>
+  <div className="w-full h-full flex justify-center">
+    <img src="/images/what2.jpeg" alt="What We Do" className="rounded-xl  w-full max-w-sm object-contain" />
+  </div>
+</div>
+
+{/* Why We Do */}
+<div id='why' className="grid md:grid-cols-2 gap-10 items-center">
+  <div className="w-full h-full flex justify-center">
+    <img src="/images/why2.jpeg" alt="Why We Do" className="rounded-xl w-full max-w-sm object-contain" />
+  </div>
+  <div className="bg-white rounded-xl ">
+    <h3 className="text-2xl font-semibold text-white mb-3">Why We Do</h3>
+    <p className="text-gray-700 text-base leading-relaxed">
+      At the heart of modern livestock healthcare is the need for real-time awareness — the ability to understand an animal’s condition before symptoms escalate, before productivity drops, and before diseases spread.
+      <br /><br />
+      In many rural regions, however, this level of vigilance is impossible. A shortage of veterinary professionals, delayed diagnoses, and vast distances between farms mean animals often suffer without timely care.
+      <br /><br />
+      We created the Smart Ear Tag to change that — a discreet, intelligent device that never stops monitoring. It continuously tracks vital signs, behavior, and movement, acting as a 24/7 early-warning system for farmers and veterinarians.
+      <br /><br />
+      But early detection is only valuable if followed by timely action. That’s where our autonomous drone platform comes in — a mobile treatment assistant that responds to alerts from the tag. Whether it's administering a vaccine, delivering a supplement, or collecting a sample, the drone ensures precision treatment with minimal human intervention.
+      <br /><br />
+      Because in the future we’re building:
+      <ul className="list-disc pl-5 mt-2">
+        <li>The ear tag is the brain, detecting and deciding</li>
+        <li>The drone is the hand, delivering care where it’s needed</li>
+        <li>The vet is the guide, supported by data, not burdened by logistics</li>
+      </ul>
+      <br />
+      We do this because we believe that technology should empower rural communities, not replace them.
+      <br />
+      And because livestock health is not just an agricultural issue — it’s a public health priority, a livelihood protector, and a food security foundation.
+    </p>
+  </div>
+</div>
+
+
+    {/* Vision & Mission */}
     <div className="grid md:grid-cols-2 gap-10">
       <div className="bg-white border-l-4 border-green-500 pl-6 py-4 shadow-sm">
         <h3 className="text-2xl font-semibold text-green-700 mb-2">🌍 Vision</h3>
         <p className="text-gray-700 text-base leading-relaxed">
-          To become a global leader in smart veterinary technology, transforming animal healthcare
-          through automation, data, and innovation — ensuring healthier livestock, empowered veterinary
-          services, and sustainable agriculture.
+          To become a global leader in intelligent veterinary technologies — revolutionizing animal healthcare through automation, data intelligence, and innovation. We envision a future where livestock are healthier, veterinary care is proactive and precise, and agriculture thrives with the support of sustainable, tech-driven practices.
+
+Through advanced tools like smart ear tags and autonomous drones, we aim to reshape how animal health is monitored, managed, and maintained — empowering communities and elevating standards in rural and urban livestock systems alike.
+
+
         </p>
       </div>
-
       <div className="bg-white border-l-4 border-blue-500 pl-6 py-4 shadow-sm">
         <h3 className="text-2xl font-semibold text-blue-700 mb-2">🚀 Mission</h3>
         <p className="text-gray-700 text-base leading-relaxed">
-          To develop AI-driven drones and smart ear tags that enhance the efficiency and reach of
-          veterinary care. We aim for scalable, user-friendly solutions that support field-level
-          decisions and empower communities through technology.
+         Our mission is to develop and deliver AI-powered drones and smart IoT ear tags that redefine the way veterinary care is provided — making it faster, more responsive, and data-driven from the ground up.
+
+By enabling real-time health tracking, geospatial insights, and predictive analytics, we equip veterinarians, farmers, and policymakers with timely, actionable intelligence. We work closely with rural communities and veterinary ecosystems to ensure our solutions are scalable, intuitive, and deeply rooted in real-world challenges — making advanced animal healthcare practical, accessible, and transformative.
         </p>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
@@ -186,7 +238,7 @@ export default function Home() {
       <div className="bg-green-50 hover:bg-green-100 transition rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
         <div className="flex items-center justify-center md:w-1/3 p-6">
           <img
-            src="/images/drone.png"
+            src="/images/vaccine.png"
             alt="Vaccination Drone"
             className="max-h-40 w-auto object-contain"
           />
@@ -226,6 +278,14 @@ export default function Home() {
         </div>
       </div>
     </div>
+    {/* Image Below About Section */}
+    <div className="flex justify-center mt-10">
+      <img
+        src="/images/image.jpeg" // change this path to your actual image file
+        alt="About Boomee"
+        className="w-full max-w-3xl rounded-lg object-cover"
+      />
+    </div>
   </div>
 </section>
 
@@ -235,7 +295,23 @@ export default function Home() {
     <h2 className="text-4xl font-bold mb-14 text-blue-900">How It Works</h2>
 
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
-      {/* Step 1 */}
+      
+      {/* Step 1: Animal */}
+      <div className="flex flex-col items-center text-center w-48">
+        <img
+          src="/images/cow.png"
+          alt="Animal"
+          className="h-24 mb-4 object-contain"
+        />
+        <h3 className="font-semibold text-lg mb-2 text-blue-800">Animal</h3>
+        <p className="text-sm text-gray-700">
+          Cattle or livestock being monitored for health and activity.
+        </p>
+      </div>
+
+      <div className="text-4xl text-blue-600 hidden md:block">➔</div>
+
+      {/* Step 2: Smart Ear Tag */}
       <div className="flex flex-col items-center text-center w-48">
         <img
           src="/images/ear-tag.png"
@@ -244,14 +320,28 @@ export default function Home() {
         />
         <h3 className="font-semibold text-lg mb-2 text-blue-800">Smart Ear Tag</h3>
         <p className="text-sm text-gray-700">
-          Continuously collects temperature, movement & vitals from each cattle.
+          Continuously captures temperature, movement, heart rate, and activity.
         </p>
       </div>
 
-      {/* Arrow */}
       <div className="text-4xl text-blue-600 hidden md:block">➔</div>
 
-      {/* Step 2 */}
+      {/* Step 3: Hashgraph */}
+      <div className="flex flex-col items-center text-center w-48">
+        <img
+          src="/images/hash.png"
+          alt="Hashgraph Ledger"
+          className="h-24 mb-4 object-contain"
+        />
+        <h3 className="font-semibold text-lg mb-2 text-blue-800">Hashgraph Environment</h3>
+        <p className="text-sm text-gray-700">
+          Securely records and shares sensor data using decentralized consensus.
+        </p>
+      </div>
+
+      <div className="text-4xl text-blue-600 hidden md:block">➔</div>
+
+      {/* Step 4: Real-Time Monitoring */}
       <div className="flex flex-col items-center text-center w-48">
         <img
           src="/images/real.png"
@@ -260,44 +350,43 @@ export default function Home() {
         />
         <h3 className="font-semibold text-lg mb-2 text-blue-800">Real-Time Monitoring</h3>
         <p className="text-sm text-gray-700">
-          Data sent hourly and on demand to cloud dashboards & apps.
+          Farmers and vets view live health dashboards on web & mobile.
         </p>
       </div>
 
-      {/* Arrow */}
       <div className="text-4xl text-blue-600 hidden md:block">➔</div>
 
-      {/* Step 3 */}
+      {/* Step 5: AI Analysis */}
       <div className="flex flex-col items-center text-center w-48">
         <img
           src="/images/ai.png"
           alt="AI Insights"
-          className="h-30 mb-4 object-contain"
+          className="h-24 mb-4 object-contain"
         />
         <h3 className="font-semibold text-lg mb-2 text-blue-800">AI Insights & Alerts</h3>
         <p className="text-sm text-gray-700">
-          Detects early signs of disease or heat for timely vet action.
+          Detects early symptoms, heat cycles, and anomalies via ML models.
         </p>
       </div>
 
-      {/* Arrow */}
       <div className="text-4xl text-blue-600 hidden md:block">➔</div>
 
-      {/* Step 4 */}
+      {/* Step 6: Drone Vaccination */}
       <div className="flex flex-col items-center text-center w-48">
         <img
-          src="/images/drone.png"
+          src="/images/vaccine.png"
           alt="Drone Vaccination"
-          className="h-40 mb-4 object-contain"
+          className="h-36 mb-4 object-contain"
         />
-        <h3 className="font-semibold text-lg mb-2 text-blue-800">Drone Vaccination</h3>
+        <h3 className="font-semibold text-lg mb-2 text-blue-800">Vaccination Drone</h3>
         <p className="text-sm text-gray-700">
-          Automated aerial vaccination for targeted disease control.
+          Automatically delivers vaccines to the exact animal when needed.
         </p>
       </div>
     </div>
   </div>
 </section>
+
 
 
 
@@ -307,31 +396,9 @@ export default function Home() {
     <h2 className="text-3xl font-bold mb-12 text-blue-800">Who Trust Us</h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
-      {/* World Bank */}
-      <div className="flex flex-col items-center">
-        <img
-          src="/images/world-bank.jpg"
-          alt="World Bank"
-          className="h-30 mb-4 object-contain"
-        />
-        <h4 className="text-md font-semibold text-gray-900">The World Bank</h4>
-        <p className="text-sm text-gray-600">
-          An international financial institution supporting development projects worldwide, including agriculture and livestock health in India.
-        </p>
-      </div>
+      
 
-      {/* TNIAMP */}
-      <div className="flex flex-col items-center">
-        <img
-          src="/images/tniamp.jpg"
-          alt="TNIAMP"
-          className="h-30 mb-4 object-contain"
-        />
-        <h4 className="text-md font-semibold text-gray-900">Tamil Nadu Irrigated Agriculture Modernization Project (TNIAMP)</h4>
-        <p className="text-sm text-gray-600">
-          A World Bank-funded initiative promoting sustainable water use and integrated livestock management across Tamil Nadu.
-        </p>
-      </div>
+     
 
       {/* TANUVAS */}
       <div className="flex flex-col items-center">
@@ -356,6 +423,30 @@ export default function Home() {
         <h4 className="text-md font-semibold text-gray-900">Veterinary Incubation Foundation (VIF)</h4>
         <p className="text-sm text-gray-600">
           A startup incubator under TANUVAS empowering veterinary innovations and technology commercialization.
+        </p>
+      </div>
+       {/* TNIAMP */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/tniamp.jpg"
+          alt="TNIAMP"
+          className="h-30 mb-4 object-contain"
+        />
+        <h4 className="text-md font-semibold text-gray-900">Tamil Nadu Irrigated Agriculture Modernization Project (TNIAMP)</h4>
+        <p className="text-sm text-gray-600">
+          A World Bank-funded initiative promoting sustainable water use and integrated livestock management across Tamil Nadu.
+        </p>
+      </div>
+      {/* World Bank */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/world-bank.jpg"
+          alt="World Bank"
+          className="h-30 mb-4 object-contain"
+        />
+        <h4 className="text-md font-semibold text-gray-900">The World Bank</h4>
+        <p className="text-sm text-gray-600">
+          An international financial institution supporting development projects worldwide, including agriculture and livestock health in India.
         </p>
       </div>
     </div>
