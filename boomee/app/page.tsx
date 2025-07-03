@@ -8,6 +8,7 @@ const heroImages = [
   "/images/hero-4.png",
   "/images/hero-5.png",
   "/images/hero-6.png",
+  "/images/hero-7.png",
 ];
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
           {/* Navigation */}
           <nav className="flex gap-4 md:gap-6 text-sm md:text-base">
             <a href="#about" className="hover:underline">About</a>
-            <a href="#case-studies" className="hover:underline">Case Studies</a>
+{/*             <a href="#case-studies" className="hover:underline">Case Studies</a> */}
             <a href="#how-it-works" className="hover:underline">How it works</a>
             <a href="#contact" className="hover:underline">Contact Us</a>
             <a href="#careers" className="hover:underline">Careers</a>
@@ -60,10 +61,10 @@ export default function Home() {
         {/* Centered Text & Buttons */}
         <div className="relative z-10 flex flex-col items-center text-center px-6 mt-48">
           <h1 className="text-4xl md:text-6xl font-bold">
-            Empowering Livestock Care with Technology
+            Empowering Livestock Health Care with Technology
           </h1>
           <p className="mt-6 text-lg max-w-xl">
-            Using AI & IoT to revolutionize animal husbandry – proudly incubated under TANUVAS.
+            Using technology to revolutionize animal husbandry – proudly incubated under TANUVAS.
           </p>
 
           <div className="mt-8 flex flex-col md:flex-row gap-4">
@@ -169,41 +170,6 @@ export default function Home() {
   </div>
 </section>
 
-{/* Case Studies Section */}
-      <section
-        id="case-studies"
-        className="bg-blue-100 py-16 px-6 text-gray-800"
-      >
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10">Case Studies</h2>
-
-          <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-            <h3 className="text-xl font-semibold mb-2">
-              🐄 Drone-Assisted Vaccination in Rural Tamil Nadu
-            </h3>
-            <p>
-              In early 2024, Boomee deployed its Vaccination Drone in remote
-              villages of Tamil Nadu. With minimal human intervention, over
-              3,000 cattle were vaccinated in under 5 days — reducing disease
-              spread and increasing coverage by 60%. Farmers appreciated the
-              speed and safety of the contactless process.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl shadow-md p-6">
-            <h3 className="text-xl font-semibold mb-2">
-              📡 Smart Ear Tags: Early Disease Detection
-            </h3>
-            <p>
-              A pilot project in Erode district equipped 100 cattle with
-              Boomee’s Smart Ear Tags. Through continuous monitoring, early
-              signs of fever and reduced activity were detected, allowing vets
-              to intervene 48 hours earlier than usual. The result: lower
-              mortality and better herd productivity.
-            </p>
-          </div>
-        </div>
-      </section>
 
 
       {/* Products Section */}
