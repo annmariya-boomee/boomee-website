@@ -196,7 +196,7 @@ export default function Home() {
             Our AI-enabled drone is engineered for rapid and contactless livestock vaccination in hard-to-reach rural regions. It autonomously navigates, administers vaccines, and ensures geo-logged delivery.
           </p>
           <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
-            <li>Reduces vet workload and increases coverage by 60%</li>
+            <li>Reduces vet workload and increases coverage</li>
             <li>Precision GPS mapping for herd-level targeting</li>
             <li>Real-time telemetry and cold chain monitoring</li>
           </ul>
@@ -219,7 +219,7 @@ export default function Home() {
           </p>
           <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
             <li>24/7 monitoring of cattle health and movement</li>
-            <li>NB-IoT based data transfer with hourly sync</li>
+            <li>Hourly and On demand data transfer to cloud and web or mobile apps</li>
             <li>Supports geofencing, heat detection & herd analytics</li>
           </ul>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
         />
         <h3 className="font-semibold text-lg mb-2 text-blue-800">Real-Time Monitoring</h3>
         <p className="text-sm text-gray-700">
-          Data sent hourly via NB-IoT to cloud dashboards & apps.
+          Data sent hourly and on demand to cloud dashboards & apps.
         </p>
       </div>
 
