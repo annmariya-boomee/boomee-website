@@ -399,7 +399,18 @@ By enabling real-time health tracking, geospatial insights, and predictive analy
       
 
      
-
+      {/* VIF */}
+      <div className="flex flex-col items-center">
+        <img
+          src="/images/vif.png"
+          alt="VIF"
+          className="h-30 mb-4 object-contain"
+        />
+        <h4 className="text-md font-semibold text-gray-900">Veterinary Incubation Foundation (VIF)</h4>
+        <p className="text-sm text-gray-600">
+          A startup incubator under TANUVAS empowering veterinary innovations and technology commercialization.
+        </p>
+      </div>
       {/* TANUVAS */}
       <div className="flex flex-col items-center">
         <img
@@ -413,18 +424,7 @@ By enabling real-time health tracking, geospatial insights, and predictive analy
         </p>
       </div>
 
-      {/* VIF */}
-      <div className="flex flex-col items-center">
-        <img
-          src="/images/vif.png"
-          alt="VIF"
-          className="h-30 mb-4 object-contain"
-        />
-        <h4 className="text-md font-semibold text-gray-900">Veterinary Incubation Foundation (VIF)</h4>
-        <p className="text-sm text-gray-600">
-          A startup incubator under TANUVAS empowering veterinary innovations and technology commercialization.
-        </p>
-      </div>
+      
        {/* TNIAMP */}
       <div className="flex flex-col items-center">
         <img
