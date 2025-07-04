@@ -118,10 +118,10 @@ export default function Home() {
     <div className="text-center">
       <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
       <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a next-generation veterinary technology company incubated at TANUVAS, Chennai. We are dedicated to transforming livestock healthcare through the integration of AI, IoT, and autonomous systems. Our work addresses some of the most pressing challenges in rural veterinary services limited manpower, delayed disease detection, and difficult terrain by providing intelligent, responsive solutions that operate at the field level. </p>
-
+  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering veterinary innovation company based at TANUVAS, Chennai. We specialize in developing livestock vaccination, Ear tags, tailored to reduce manual labour, increase efficiency, and ensure precision in animal healthcare.
+</p>
 <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700 mt-6">
-  At the core of our innovation are smart IoT ear tags for continuous animal health monitoring and drone-assisted treatment systems that deliver timely interventions such as vaccinations and supplements. Together, these tools enable early warning, geo-tracking, and actionable insights for farmers, veterinarians, and policymakers. Our mission is to make veterinary care smarter, faster, and accessible empowering those who care for animals with the technology they need, exactly when and where they need it
+  Our team of engineers, veterinarians, and innovators is driven by a shared vision — to transform animal health services using advanced technology. Our solutions address critical challenges in rural veterinary outreach, such as manpower shortages, geographic barriers, and inefficiencies in disease monitoring.
 </p>
 
     </div>
@@ -161,9 +161,8 @@ export default function Home() {
       <div className="bg-white border-l-4 border-green-500 pl-6 py-4 shadow-sm">
         <h3 className="text-2xl font-semibold text-green-700 mb-2">🌍 Vision</h3>
         <p className="text-gray-700 text-base leading-relaxed">
-          To become a global leader in intelligent veterinary technologies — revolutionizing animal healthcare through automation, data intelligence, and innovation. We envision a future where livestock are healthier, veterinary care is proactive and precise, and agriculture thrives with the support of sustainable, tech-driven practices.
+          To lead in smart, sustainable technologies that enhance animal health, improve traceability, and empower rural and veterinary ecosystems globally.
 
-Through advanced tools like smart ear tags and autonomous drones, we aim to reshape how animal health is monitored, managed, and maintained — empowering communities and elevating standards in rural and urban livestock systems alike.
 
 
         </p>
@@ -171,9 +170,7 @@ Through advanced tools like smart ear tags and autonomous drones, we aim to resh
       <div className="bg-white border-l-4 border-blue-500 pl-6 py-4 shadow-sm">
         <h3 className="text-2xl font-semibold text-blue-700 mb-2">🚀 Mission</h3>
         <p className="text-gray-700 text-base leading-relaxed">
-         Our mission is to develop and deliver AI-powered drones and smart IoT ear tags that redefine the way veterinary care is provided — making it faster, more responsive, and data-driven from the ground up.
-
-By enabling real-time health tracking, geospatial insights, and predictive analytics, we equip veterinarians, farmers, and policymakers with timely, actionable intelligence. We work closely with rural communities and veterinary ecosystems to ensure our solutions are scalable, intuitive, and deeply rooted in real-world challenges — making advanced animal healthcare practical, accessible, and transformative.
+        To innovate accessible, data-driven solutions that support animal well-being, rural development, and efficient decision-making across veterinary.
         </p>
       </div>
     </div>
