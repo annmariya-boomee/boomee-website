@@ -523,66 +523,41 @@ export default function Home() {
 </section>
 
 
-      {/* Contact Section */}
+     {/* Contact Section */}
 <section id="contact" className="bg-gray-50 py-20 px-6 text-gray-800">
-  <div className="max-w-5xl mx-auto">
+  <div className="max-w-3xl mx-auto">
     <h2 className="text-4xl font-bold text-center mb-10">📬 Contact Us</h2>
 
-    <div className="grid md:grid-cols-2 gap-8">
-      {/* Registered Office */}
+    <div className="space-y-8">
+      {/* Address + CIN */}
       <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4">🏠 Registered Office</h3>
+        <h3 className="text-xl font-semibold mb-4">🏢 Office Address</h3>
         <p className="text-gray-700 leading-relaxed">
-          Railar Nagar, D.no. l4/105,<br />
-          TNHB Colony, Sec-4, Podumbu,<br />
-          Madurai North, Tamil Nadu – 625018 <br />
+          First Floor, CUL Building, VIF, TANUVAS,<br />
+          Milk Colony, Madhavaram, Chennai – 600051<br />
           🧾 <strong>CIN:</strong> U62013TN2025PTC178528
         </p>
       </div>
 
-      {/* Corporate Office */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4">🏢 Office</h3>
-        <p className="text-gray-700 leading-relaxed">
-          First Floor, CUL Building, VIF, TANUVAS,<br />
-          Milk Colony, Madhavaram, Chennai – 600051
-        </p>
-      </div>
-
-      {/* CIN */}
-      <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4"> ✉️ Email </h3>
-        <p className="text-gray-700">
-        <strong>Email:</strong>{" "}
-          <a
-            href="mailto:info@boomee-tech.com"
-            className="text-blue-600 hover:underline"
-          >
-            info@boomee-tech.com
-          </a>
-        </p>
-        {/* <p className="text-gray-700">
-          📞 <strong>Phone:</strong>{" "}
-          <a href="tel:+919566661923" className="text-blue-600 hover:underline">
-            +91 95666 61923
-          </a>
-        </p> */}
-      </div>
-
       {/* Email */}
       <div className="bg-white rounded-xl shadow-md p-6">
-        <h3 className="text-xl font-semibold mb-4"> 📞 Phone</h3>
-{/*         <p className="text-gray-700">
-        ✉️ <strong>Email:</strong>{" "}
+        <h3 className="text-xl font-semibold mb-4">✉️ Email</h3>
+        <p className="text-gray-700">
+          <strong>Email:</strong>{" "}
           <a
             href="mailto:info@boomee-tech.com"
             className="text-blue-600 hover:underline"
           >
             info@boomee-tech.com
           </a>
-        </p> */}
+        </p>
+      </div>
+
+      {/* Phone */}
+      <div className="bg-white rounded-xl shadow-md p-6">
+        <h3 className="text-xl font-semibold mb-4">📞 Phone</h3>
         <p className="text-gray-700">
-           <strong>Phone:</strong>{" "}
+          <strong>Phone:</strong>{" "}
           <a href="tel:+919566661923" className="text-blue-600 hover:underline">
             +91 95666 61923
           </a>
@@ -591,6 +566,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
 
       {/* Footer */}
