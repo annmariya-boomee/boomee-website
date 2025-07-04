@@ -118,7 +118,7 @@ export default function Home() {
     <div className="text-center">
       <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
       <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering veterinary innovation company based at TANUVAS, Chennai. We specialize in developing livestock vaccination, Ear tags, tailored to reduce manual labour, increase efficiency, and ensure precision in animal healthcare.
+  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering veterinary innovation company based at TANUVAS, Chennai. We specialize in animal treatment, Ear tags, tailored to reduce manual labour, increase efficiency, and ensure precision in animal healthcare.
 </p>
 <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700 mt-6">
   Our team of engineers, veterinarians, and innovators is driven by a shared vision — to transform animal health services using advanced technology. Our solutions address critical challenges in rural veterinary outreach, such as manpower shortages, geographic barriers, and inefficiencies in disease monitoring.
@@ -194,14 +194,14 @@ export default function Home() {
         <div className="flex items-center justify-center md:w-1/3 p-6">
           <img
             src="/images/vaccine.png"
-            alt="Vaccination Drone"
+            alt="Treatment Drone"
             className="max-h-40 w-auto object-contain"
           />
         </div>
         <div className="p-6 flex flex-col justify-center md:w-2/3">
-          <h3 className="text-2xl font-bold text-green-800 mb-2">Vaccination Drone</h3>
+          <h3 className="text-2xl font-bold text-green-800 mb-2">Treatment Drone</h3>
           <p className="text-gray-700 mb-3">
-            Our AI-enabled drone is engineered for rapid and contactless livestock vaccination in hard-to-reach rural regions. It autonomously navigates, administers vaccines, and ensures geo-logged delivery.
+            Our AI-enabled drone is engineered for rapid and contactless treatment for animals in hard-to-reach rural regions. It autonomously navigates, administers vaccines, and ensures geo-logged delivery.
           </p>
           <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
             <li>Reduces vet workload and increases coverage</li>
@@ -333,9 +333,9 @@ export default function Home() {
           alt="Drone Vaccination"
           className="h-36 mb-4 object-contain"
         />
-        <h3 className="font-semibold text-lg mb-2 text-blue-800">Vaccination Drone</h3>
+        <h3 className="font-semibold text-lg mb-2 text-blue-800">Treatment Drone</h3>
         <p className="text-sm text-gray-700">
-          Automatically delivers vaccines to the exact animal when needed.
+          Automatically delivers treatment to the exact animal when needed.
         </p>
       </div>
     </div>
