@@ -35,7 +35,7 @@ export default function Home() {
         <div className="absolute top-0 left-0 w-full h-20 bg-black/30 backdrop-blur-sm z-10"></div> */}
 
         {/* Overlay Navigation & Branding */}
-        <div className="relative z-20 flex justify-between items-center px-8 py-6">
+        <div className="relative z-20 flex flex-col md:flex-row md:justify-between md:items-center gap-4 px-4 py-6">
           {/* Logo + Company Name */}
           <div className="flex items-center gap-3">
             <img
