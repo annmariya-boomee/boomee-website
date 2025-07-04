@@ -68,7 +68,7 @@ export default function Home() {
             Using technology to revolutionize animal husbandry – proudly incubated under TANUVAS.
           </p>
 
-          <div className="mt-8 flex flex-col md:flex-row gap-4">
+          {/* <div className="mt-8 flex flex-col md:flex-row gap-4">
             <a
               href="#what"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
@@ -81,7 +81,7 @@ export default function Home() {
             >
               Why we do?
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -118,12 +118,12 @@ export default function Home() {
     <div className="text-center">
       <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
       <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-        <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a next-generation veterinary technology company incubated at TANUVAS, Chennai. We are on a mission to transform livestock healthcare through intelligent automation and real-time data.
-        <br /><br />
-        At the intersection of agriculture, AI, and animal science, our solutions are built to solve the toughest challenges in rural veterinary care — from limited manpower and disease outbreaks to inaccessible terrains.
-        <br /><br />
-        Our flagship innovations — drone-based livestock treatment systems and smart IoT ear tags — help farmers, veterinarians, and policymakers make faster, smarter, and more informed decisions. Whether it’s diagnosing illness, delivering precision vaccines, or analyzing herd behavior, Boomee brings the future of animal healthcare to the field.
-      </p>
+  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a next-generation veterinary technology company incubated at TANUVAS, Chennai. We are dedicated to transforming livestock healthcare through the integration of AI, IoT, and autonomous systems. Our work addresses some of the most pressing challenges in rural veterinary services limited manpower, delayed disease detection, and difficult terrain by providing intelligent, responsive solutions that operate at the field level. </p>
+
+<p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700 mt-6">
+  At the core of our innovation are smart IoT ear tags for continuous animal health monitoring and drone-assisted treatment systems that deliver timely interventions such as vaccinations and supplements. Together, these tools enable early warning, geo-tracking, and actionable insights for farmers, veterinarians, and policymakers. Our mission is to make veterinary care smarter, faster, and accessible empowering those who care for animals with the technology they need, exactly when and where they need it
+</p>
+
     </div>
 
     {/* Image Below About Section
@@ -136,66 +136,24 @@ export default function Home() {
     </div> */}
 
 
-    {/* What We Do */}
-<div id= 'what'className="grid md:grid-cols-2 gap-10 items-center">
-  <div className="bg-white rounded-xl">
-    <h3 className="text-2xl font-semibold text-white mb-3">What We Do</h3>
+   <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-6xl mx-auto px-4">
+  {/* What We Do */}
+  <div className="bg-white shadow-md rounded-2xl p-6 border border-blue-100">
+    <h3 className="text-2xl font-semibold text-blue-800 mb-4">What We Do?</h3>
     <p className="text-gray-700 text-base leading-relaxed">
-      We build intelligent, responsive systems that give animals a voice — and vets the tools to act on it.
-      <br /><br />
-      At the center of our solution is the Boomee Smart Ear Tag — a lightweight, wearable device that transforms every animal into a live stream of health data. It constantly monitors temperature, heart rate, activity, and movement, alerting farmers and veterinary teams the moment something seems off.
-      <br /><br />
-      But real-time data is only powerful when it’s paired with timely action. That’s why our system integrates with autonomous drones — precision tools that can fly in to deliver vaccines, supplements, or diagnostic support exactly when and where it’s needed.
-      <br /><br />
-      We don’t just monitor.
-      We create a closed-loop system of care — where detection and treatment happen seamlessly, with minimal delay, even in the most remote environments.
-      <br /><br />
-      With Boomee, every animal receives:
-      <ul className="list-disc pl-5 mt-2">
-        <li>24/7 intelligent health surveillance</li>
-        <li>Early detection through AI-driven analytics</li>
-        <li>Drone-assisted, geo-tagged intervention</li>
-        <li>Scalable solutions that work on real farms, under real conditions</li>
-      </ul>
-      <br />
-      What we do is more than tech.
-      It’s a new standard for livestock healthcare — one that’s proactive, precise, and deeply grounded in the realities of rural life.
+      Boomee Phygital Services Pvt. Ltd. builds smart veterinary tools that bring precision and efficiency to livestock healthcare. Our flagship technologies include AI-powered smart ear tags and autonomous vaccination drones. These solutions are designed to collect real-time health data, detect anomalies early, and deliver targeted care especially in remote rural settings. We work closely with veterinarians and field teams to ensure our products are practical, scalable, and easy to deploy in real-world agricultural environments.
     </p>
   </div>
-  <div className="w-full h-full flex justify-center">
-    <img src="/images/what2.jpeg" alt="What We Do" className="rounded-xl  w-full max-w-sm object-contain" />
+
+  {/* Why We Do */}
+  <div className="bg-white shadow-md rounded-2xl p-6 border border-blue-100">
+    <h3 className="text-2xl font-semibold text-blue-800 mb-4">Why We Do?</h3>
+    <p className="text-gray-700 text-base leading-relaxed">
+      We believe that healthy livestock are the foundation of food security, economic resilience, and sustainable agriculture. However, millions of animals go untreated due to lack of access and delayed detection. By combining automation and real-time analytics, we’re closing the gap between care and need. Our mission is to empower veterinary systems with smart technology that enables timely decisions, reduces animal suffering, and supports thriving rural communities.
+    </p>
   </div>
 </div>
 
-{/* Why We Do */}
-<div id='why' className="grid md:grid-cols-2 gap-10 items-center">
-  <div className="w-full h-full flex justify-center">
-    <img src="/images/why2.jpeg" alt="Why We Do" className="rounded-xl w-full max-w-sm object-contain" />
-  </div>
-  <div className="bg-white rounded-xl ">
-    <h3 className="text-2xl font-semibold text-white mb-3">Why We Do</h3>
-    <p className="text-gray-700 text-base leading-relaxed">
-      At the heart of modern livestock healthcare is the need for real-time awareness — the ability to understand an animal’s condition before symptoms escalate, before productivity drops, and before diseases spread.
-      <br /><br />
-      In many rural regions, however, this level of vigilance is impossible. A shortage of veterinary professionals, delayed diagnoses, and vast distances between farms mean animals often suffer without timely care.
-      <br /><br />
-      We created the Smart Ear Tag to change that — a discreet, intelligent device that never stops monitoring. It continuously tracks vital signs, behavior, and movement, acting as a 24/7 early-warning system for farmers and veterinarians.
-      <br /><br />
-      But early detection is only valuable if followed by timely action. That’s where our autonomous drone platform comes in — a mobile treatment assistant that responds to alerts from the tag. Whether it's administering a vaccine, delivering a supplement, or collecting a sample, the drone ensures precision treatment with minimal human intervention.
-      <br /><br />
-      Because in the future we’re building:
-      <ul className="list-disc pl-5 mt-2">
-        <li>The ear tag is the brain, detecting and deciding</li>
-        <li>The drone is the hand, delivering care where it’s needed</li>
-        <li>The vet is the guide, supported by data, not burdened by logistics</li>
-      </ul>
-      <br />
-      We do this because we believe that technology should empower rural communities, not replace them.
-      <br />
-      And because livestock health is not just an agricultural issue — it’s a public health priority, a livelihood protector, and a food security foundation.
-    </p>
-  </div>
-</div>
 
 
     {/* Vision & Mission */}
@@ -278,14 +236,14 @@ By enabling real-time health tracking, geospatial insights, and predictive analy
         </div>
       </div>
     </div>
-    {/* Image Below About Section */}
+    {/* Image Below About Section
     <div className="flex justify-center mt-10">
       <img
         src="/images/image.jpeg" // change this path to your actual image file
         alt="About Boomee"
         className="w-full max-w-3xl rounded-lg object-cover"
       />
-    </div>
+    </div> */}
   </div>
 </section>
 
