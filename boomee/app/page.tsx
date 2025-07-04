@@ -141,7 +141,7 @@ export default function Home() {
   <div className="bg-white shadow-md rounded-2xl p-6 border border-blue-100">
     <h3 className="text-2xl font-semibold text-blue-800 mb-4">What We Do?</h3>
     <p className="text-gray-700 text-base leading-relaxed">
-      Boomee Phygital Services Pvt. Ltd. builds smart veterinary tools that bring precision and efficiency to livestock healthcare. Our flagship technologies include AI-powered smart ear tags and autonomous vaccination drones. These solutions are designed to collect real-time health data, detect anomalies early, and deliver targeted care especially in remote rural settings. We work closely with veterinarians and field teams to ensure our products are practical, scalable, and easy to deploy in real-world agricultural environments.
+      Boomee Phygital Services Pvt. Ltd. develops smart veterinary technologies for animal healthcare. Our innovations include AI-powered ear tags and autonomous treatment drones. These tools collect real-time health data and detect early signs of illness. They’re built for use in remote or underserved environments. We ensure our solutions are scalable, practical, and easy to deploy in the field.
     </p>
   </div>
 
@@ -149,7 +149,7 @@ export default function Home() {
   <div className="bg-white shadow-md rounded-2xl p-6 border border-blue-100">
     <h3 className="text-2xl font-semibold text-blue-800 mb-4">Why We Do?</h3>
     <p className="text-gray-700 text-base leading-relaxed">
-      We believe that healthy livestock are the foundation of food security, economic resilience, and sustainable agriculture. However, millions of animals go untreated due to lack of access and delayed detection. By combining automation and real-time analytics, we’re closing the gap between care and need. Our mission is to empower veterinary systems with smart technology that enables timely decisions, reduces animal suffering, and supports thriving rural communities.
+      We believe healthy animals are essential for food security, livelihoods, and ecosystems. Many go untreated due to lack of timely access to care. Our tech bridges that gap with automation and real-time insights. It supports faster, smarter veterinary decision-making. We aim to improve animal welfare and empower rural communities.
     </p>
   </div>
 </div>
@@ -201,7 +201,7 @@ export default function Home() {
         <div className="p-6 flex flex-col justify-center md:w-2/3">
           <h3 className="text-2xl font-bold text-green-800 mb-2">Treatment Drone</h3>
           <p className="text-gray-700 mb-3">
-            Our AI-enabled drone is engineered for rapid and contactless treatment for animals in hard-to-reach rural regions. It autonomously navigates, administers vaccines, and ensures geo-logged delivery.
+            Our AI-enabled drone is engineered for rapid and contactless treatment for animals in hard-to-reach rural regions. It autonomously navigates, administers medicines, and ensures geo-logged delivery.
           </p>
           <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
             <li>Reduces vet workload and increases coverage</li>
