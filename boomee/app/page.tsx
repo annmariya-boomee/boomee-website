@@ -118,10 +118,10 @@ export default function Home() {
     <div className="text-center">
       <h2 className="text-4xl font-bold text-blue-700 mb-4">About Us</h2>
       <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700">
-  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering veterinary innovation company based at TANUVAS, Chennai. We specialize in animal treatment, Ear tags, tailored to reduce manual labour, increase efficiency, and ensure precision in animal healthcare.
+  <strong className="text-blue-800">Boomee Phygital Services Pvt. Ltd.</strong> is a pioneering veterinary innovation company based at TANUVAS, Chennai. We specialize in Veterinary Treatment and Smart Ear tags, tailored to reduce manual labour, increase efficiency, and ensure precision in animal healthcare.
 </p>
 <p className="text-lg leading-relaxed max-w-4xl mx-auto text-gray-700 mt-6">
-  Our team of engineers, veterinarians, and innovators is driven by a shared vision — to transform animal health services using advanced technology. Our solutions address critical challenges in rural veterinary outreach, such as manpower shortages, geographic barriers, and inefficiencies in disease monitoring.
+  Our team of engineers, veterinarians, and innovators is driven by a shared vision to transform animal health services using advanced technology. Our solutions address critical challenges in rural veterinary outreach, such as manpower shortages, geographic barriers, and inefficiencies in disease monitoring.
 </p>
 
     </div>
@@ -199,7 +199,7 @@ export default function Home() {
           />
         </div>
         <div className="p-6 flex flex-col justify-center md:w-2/3">
-          <h3 className="text-2xl font-bold text-green-800 mb-2">Treatment Drone</h3>
+          <h3 className="text-2xl font-bold text-green-800 mb-2">Vet Treatment via Drone</h3>
           <p className="text-gray-700 mb-3">
             Our AI-enabled drone is engineered for rapid and contactless treatment for animals in hard-to-reach rural regions. It autonomously navigates, administers medicines, and ensures geo-logged delivery.
           </p>
@@ -418,7 +418,7 @@ export default function Home() {
     </p>
 
     <form
-  action="https://formspree.io/f/mzzgkngp"
+  action="https://formspree.io/f/xnnvyjzr"
   method="POST"
   className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"
 >
